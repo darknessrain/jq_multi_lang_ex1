@@ -10,6 +10,7 @@
 	<script type="text/javascript">
 		var lang = new Lang();
 		lang.dynamic('th', 'js/langpack/th.json');
+		lang.dynamic('tw', 'js/langpack/tw.json');
 		lang.init({
 			defaultLang: 'en'
 		});
@@ -38,8 +39,7 @@
 		 border="0"/></a><BR/><BR/>
 
 <div id="langChanger"><a href="#" onclick="window.lang.change('en'); return false;">Switch to English</a> | <a href="#"
-																											   onclick="window.lang.change('th'); return false;">Switch
-	to Thai</a></div>
+																											   onclick="window.lang.change('th'); return false;">Switch	to Thai</a><a href="#" onclick="window.lang.change('tw'); return false;">Switch to Taiwan</a></div>
 <div id="testHtml">
 	<div id="searchTitle" class="sectionTitle" lang="en">Property Search</div>
 	<div id="searchForm">
@@ -188,12 +188,12 @@
 						<div id="dyn-target" lang="en"></div>
 					</td>
 				</tr>
-				
+
 				<tr>
 					<td>
 						Long text translation with a custom defined token(data-lang-token attribute):<br>
-						
-						<div lang="en" data-lang-token="lorem">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in ...</div>
+
+						<div lang="en" data-lang-token="Secret">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in ...</div>
 					</td>
 				</tr>
 			</table>
